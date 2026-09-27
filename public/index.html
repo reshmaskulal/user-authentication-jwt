@@ -1,0 +1,59 @@
+%%writefile github_project/public/index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Authentication & JWT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>User Authentication & JWT</h1>
+
+    <div class="forms">
+
+        <div class="card">
+            <h2>Register</h2>
+
+            <input type="text" id="registerName" placeholder="Name">
+            <input type="email" id="registerEmail" placeholder="Email">
+            <input type="password" id="registerPassword" placeholder="Password">
+
+            <button onclick="registerUser()">Register</button>
+
+            <p id="registerMessage"></p>
+        </div>
+
+        <div class="card">
+            <h2>Login</h2>
+
+            <input type="email" id="loginEmail" placeholder="Email">
+            <input type="password" id="loginPassword" placeholder="Password">
+
+            <button onclick="loginUser()">Login</button>
+
+            <p id="loginMessage"></p>
+        </div>
+
+    </div>
+
+    <div class="profile-card">
+        <h2>Protected Profile</h2>
+
+        <button onclick="getProfile()">View Profile</button>
+
+        <div id="profile"></div>
+    </div>
+
+    <button class="logout" onclick="logoutUser()">Logout</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
