@@ -1,0 +1,74 @@
+%%writefile github_project/public/style.css
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+    margin: 0;
+    padding: 30px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.forms {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card,
+.profile-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    width: 350px;
+}
+
+.profile-card {
+    margin-top: 25px;
+}
+
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #333;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.logout {
+    margin-top: 20px;
+}
+
+p {
+    min-height: 20px;
+}
+
+#profile {
+    margin-top: 15px;
+    text-align: left;
+}
